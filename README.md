@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# Signup & Login App 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple **React.js application** with **Login, Signup, and Welcome pages** using **React Router** and **Material UI**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Features
 
-### `npm start`
+* Login with email and password
+* Signup with basic details
+* Redirect to **Welcome page** after login
+* Client-side form validation
+* Built with **React Router v6** for navigation
+* Clean Material UI components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Project Structure
 
-### `npm test`
+```
+src/
+│── components/
+│   ├── Login.jsx
+│   ├── Signup.jsx
+│   ├── Welcomepage.jsx
+│── App.js
+│── index.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/mahendranegi/signup.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Navigate to project folder**
 
-### `npm run eject`
+```bash
+cd signup
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install dependencies**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Run the project**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Now the app will be running at 👉 [http://localhost:3000](http://localhost:3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚦 Available Routes
 
-### Code Splitting
+* `/` → Login page
+* `/signup` → Signup page
+* `/welcome` → Welcome page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🌐 Deployment (GitHub Pages)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Install GitHub Pages package:
 
-### Making a Progressive Web App
+```bash
+npm install gh-pages --save-dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. In **package.json**, add:
 
-### Advanced Configuration
+```json
+"homepage": "https://mahendranegi.github.io/signup",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Deploy:
 
-### Deployment
+```bash
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Now your app will be live at:
+👉 `https://mahendranegi.github.io/signup`
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🛠 Tech Stack
+
+* **React.js**
+* **Material UI**
+* **React Router v6**
+
+---
+
+## 📧 Author
+
+**Mahendra Negi**
+
+* GitHub: [mahendranegi](https://github.com/mahendranegi)
+
+---
+
+
