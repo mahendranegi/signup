@@ -135,7 +135,7 @@ function Signup() {
     e.preventDefault();
     if (validateAll()) {
       alert("Signup done success");
-      navigate("/"); // Redirect to Login
+      navigate("/login"); // Redirect to Login
     }
   };
 

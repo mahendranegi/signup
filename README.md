@@ -78,7 +78,7 @@ npm install gh-pages --save-dev
 2. In **package.json**, add:
 
 ```json
-"homepage": "https://mahendranegi.github.io/signup",
+"homepage": "https://mahendranegi.github.io/login",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"

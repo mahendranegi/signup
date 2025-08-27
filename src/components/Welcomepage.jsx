@@ -21,7 +21,7 @@ function Welcomepage() {
       <Button 
         variant="contained" 
         color="primary" 
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/login")}
         sx={{ mt: 3 }}
       >
         Logout
