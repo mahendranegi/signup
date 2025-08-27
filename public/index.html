@@ -13,9 +13,34 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
     <title>Login App</title>
+    <style>
+      body{
+margin: 0px;padding: 64px;background: #bfdad6;height: calc(100vh - 64px - 64px);display: flex;align-items: center;justify-content: center;
+      }
+      #root{
+        width: 100%;
+      }
+        @media only screen and (max-width: 600px) {
+        body{
+          padding: 0;
+          background: #fff;
+          height: 100%;
+          & h3{
+            font-size: 24px !important;
+          }
+          & form{
+            padding: 0 !important;
+            margin: 12px auto 0 !important;
+            & .MuiButton-containedPrimary{
+              width: 100% !important;
+            }
+          }
+        }
+        }
+    </style>
   </head>
-  <body style="margin: 0px;padding: 64px;background: #bfdad6;height: calc(100vh - 64px - 64px);display: flex;align-items: center;justify-content: center;">
-    <div id="root" style="width: 100%;"></div>
+  <body>
+    <div id="root"></div>
     
   </body>
 </html>

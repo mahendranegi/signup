@@ -148,7 +148,7 @@ function Signup() {
       </header>
 
       <Container>
-        <form onSubmit={handleSubmit}>
+        <form class="signUpStyle" onSubmit={handleSubmit}>
           <div className="signUppage">
             <TextField
               name="name"

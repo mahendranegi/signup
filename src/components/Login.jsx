@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { LoginStyled } from "./styled";
 import { useNavigate } from "react-router-dom";
+import Container from "@mui/material/Container";
 
 function Login() {
   const navigate = useNavigate();
@@ -84,7 +85,7 @@ const handleLogin = (e) => {
           Sign In to Continue
         </Typography>
       </header>
-
+          <Container>
       <form onSubmit={handleLogin}>
         <TextField
           name="username"
@@ -122,6 +123,7 @@ const handleLogin = (e) => {
           </div>
         </div>
       </form>
+      </Container>
     </LoginStyled>
   );
 }

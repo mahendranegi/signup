@@ -16,17 +16,19 @@ export const LoginStyled = styled.div`
       color: #fff;
     }
   }
-
-  form {
-    width: 600px;
-    margin: 64px auto;
+.MuiContainer-root form {
+    width: 600px !important;
+    margin: 64px auto !important;
     height: 100%;
     padding: 0 24px;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-    gap: 24px;
+    gap: 24px !important;
     box-sizing: border-box;
     justify-content: center;
+}
+  form {
+  
 
     .flexCenter {
       display: flex;
@@ -71,8 +73,8 @@ export const LoginStyled = styled.div`
     }
   }
 
-  .MuiContainer-root form {
-    width: 100%;
+  .MuiContainer-root form.signUpStyle {
+    width: 100% !important;
     gap: 0;
   }
 
@@ -92,8 +94,8 @@ export const LoginStyled = styled.div`
       width: 100% !important;
     }
 
-    form {
-      width: 100%;
+    form,.MuiContainer-root form {
+      width: 100% !important;
       box-sizing: border-box;
     }
   }
